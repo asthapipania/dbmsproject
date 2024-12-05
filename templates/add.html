@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Student</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Add a New Student</h1>
+        <form action="/add" method="POST" class="form-container">
+            <label for="name">Name:</label>
+            <input type="text" name="name" required>
+            
+            <label for="age">Age:</label>
+            <input type="number" name="age" required>
+            
+            <label for="class">Class:</label>
+            <input type="text" name="class" required>
+            
+            <input type="submit" value="Add Student">
+        </form>
+    </div>
+</body>
+</html>
